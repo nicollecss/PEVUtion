@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> pevution site de estudos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+ <header>
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <img class="imagem"  src="../static/logob.svg">
+    <a class="ingresso"    href="{{url_for('index')}}">Início</a>
+    <a class="ingresso" href="{{url_for('vest')}}"> Vest-UNB</a>
+    <a class="ingresso" href="{{url_for('enem')}}"> ENEM</a>
+    <a class="ingresso" href="{{url_for('pas')}}"> PAS</a>
+    <a class="ingresso" href="{{url_for('sobre')}}">Sobre</a>
+    <button class="btn btn-outline-success" type="submit">ajuda</button>
+
+  </nav>
+ </header>
+ 
+ <main>
+
+      <section>
+
+    <div class="centralizar_textos">  
+  <hr class="divisao2"/>  
+        <h4 class="titulo_texto" >O que é o Exame Nacional do Ensino Médio?</h4>
+        <p>Criado em 1998, o Exame Nacional do Ensino Médio (Enem) é uma prova realizada pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP), vinculado ao Ministério da Educação do Brasil (MEC). Seu objetivo inicial era avaliar a qualidade da educação no país, além de também servir como certificação de conclusão do ensino médio até 2016.</p>
+        <p>Hoje, o Enem é o maior vestibular do país e seu resultado é utilizado como porta de entrada para diversas instituições de ensino superior, sejam públicas ou privadas. Com edições anuais, os candidatos podem realizar o exame na versão impressa ou digital.</p>
+        </br>
+        <h4 class="titulo_texto">Como funciona a prova?</h4>
+        <p>O Enem funciona da seguinte forma: o candidato se inscreve pelo site durante o período de inscrições e realiza a prova (impressa ou digital) em dois domingos consecutivos na data proposta para aquela edição. Todo esse cronograma é divulgado no site oficial do Enem e atualizado anualmente.</p>
+        </br>
+        <h4 class="titulo_texto">Quem pode fazer?</h4>
+        <p>O Enem é destinado a estudantes que estão concluindo o Ensino Médio, mas pode ser feito por qualquer pessoa com condições de responder a prova.
+            Quem não concluiu o Ensino Médio e não vai concluí-lo no ano seguinte também pode fazer o Enem, mas como treineiro.</p>
+        </br>
+        <h4 class="titulo_texto">Qual é o regulamento da isenção?</h4>
+        <p> A isenção do Enem é concedida a participantes que estiverem cursando a última série do Ensino Médio, em qualquer modalidade de ensino, em escolas da rede pública declaradas ao Censo Escolar.
+            Também pode solicitar a gratuidade do exame quem cursou todo o Ensino Médio em escola da rede pública ou como bolsista integral na rede privada, além de ter renda per capita igual ou inferior a um salário mínimo e meio.
+            Importante: quem obteve isenção da taxa de inscrição para o Enem do ano anterior, porém não compareceu aos dias de prova, deve justificar a ausência para solicitar novamente o benefício.</p>
+
+        </br>
+        <h4 class="titulo_texto">Áreas de Conhecimento</h4>    
+        <ol class="c">
+          <li>Linguagens, Códigos e suas Tecnologias + Redação Dissertativa-Argumentativa</li>
+          <li>Ciências Humanas e Suas Tecnologias</li>
+          <li>Ciências da natureza e suas tecnologias</li>
+          <li>Matemática e suas  tecnologias</li>
+        </ol>
+        </br>
+        <h4 class="titulo_texto">Como sai o resultado do exame?</h4>
+        <p>O resultado do Enem é liberado sempre na Página do Participante, na data divulgada pelo Inep. Para realizar a consulta às notas, os participantes precisam informar o CPF e senha cadastrados. As notas para os treineiros (estudantes que ainda não se formarão) serão divulgadas cerca de 60 dias depois das demais notas. A nota do Enem é calculada com base na Teoria de Resposta ao Item (TRI), que pune chutes e valoriza os acertos de cada candidato.</p>
+
+       </br>
+        <h4 class="titulo_texto">Como e aonde aplicar a nota?</h4>     
+        <p> Algumas universidades permitem o ingresso por meio da nota do Enem, mas existem também programas do Governo que usam esse resultado. São eles: </p>
+            
+            <ol class="c">
+              <li><p><b>SiSU</b></p></li>
+            </ol>
+          <p> O Sistema de Seleção Unificada (SiSU) seleciona estudantes para ingressar em universidades públicas, estaduais ou federais. Para se candidatar ao programa, é preciso ter atingido nota acima de zero na redação aplicada no Enem.</p>
+            
+          <ol class="c">
+            <li><p><b>PROUNI</b></p></li>
+          </ol>
+          <p> O Programa Universidade para Todos (ProUni) oferece bolsas de 50% ou 100% para estudantes. Para se candidatar, é preciso ter renda familiar entre 1,5 e 3 salários mínimos, ter participado de alguma edição do Enem desde 2010 e ter atingido, pelo menos, 450 pontos na prova, além de não ter zerado a redação.</p>
+            
+          <ol class="c">
+            <li><p><b>FIES</b></p></li>
+          </ol>
+            <p> O Fundo de Financiamento ao Estudante do Ensino Superior (Fies) viabiliza financiamentos para que estudantes entrem em universidades particulares. Para se candidatar, é preciso ter atingido pelo menos 450 pontos na prova do Enem.</p>  
+
+    <hr class="divisao2"/>
+    <h4 class="texto_div">Assista a vídeo-aulas e faça exercícios:</h4>   
+    </div>
+                <section>
+      <div class="divgrandona">        
+            <div id = "div1"class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">linguagens e suas tecnologias</div>
+                <div class="card-body">
+                    <h5 class="card-title"> Gramática</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://www.youtube.com/watch?v=J1FWk53P-yY&list=PL8vXuI6zmpdiy2Xhd1Tn4_q974HxDUzox">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://drive.google.com/file/d/1f5aPSKdLjfJci16sf6nALua0ZiJUrRW4/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+              </div>
+              
+              <div id = "div6"class="card text-bg-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header titulo_card">linguagens e suas tecnologias</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Literatura</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=POalSeti9cA&list=PLRh73qxL4i9lDSqJq1x59QW6HhPEYfaCq">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://drive.google.com/file/d/1fALVTP84mitXskY3mArrFBYCV41T5it5/view?usp=drive_link">exercícios</a></p></button>
+                  </div>
+                </div>
+              
+              <div id = "div3"class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">humanas e suas tecnologias</div>
+                <div class="card-body">
+                    <h5 class="card-title">Filosofia</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href=" https://youtu.be/TIIzrsbx74E?si=OZwHDzL_47msG4I9">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://drive.google.com/file/d/1f1LqwrEEM-9vVF-6zCP6s8ZYTF5_ylB2/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+              </div>
+              
+              <div id = "div4"class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">humanas e suas tecnologias</div>
+                <div class="card-body">
+                  <h5 class="card-title">Sociologia</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=ZdIrgqd7keI&list=PLMra4G0-Z7pMnBecUK6b8VpwDceBI7xcE">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://drive.google.com/file/d/1f1LqwrEEM-9vVF-6zCP6s8ZYTF5_ylB2/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+              </div>
+              
+              <div id = "div5"class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">humanas e suas tecnologias</div>
+                <div class="card-body">
+                  <h5 class="card-title">História</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://www.youtube.com/watch?v=EDZVqcvffgQ&list=PLMra4G0-Z7pMYLE-D-ptnHt1IW_Y1hn8H">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://drive.google.com/file/d/1fTOeYSWRz2QoHb61X5mACyPsIyVI0v9j/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+            </div>
+
+              
+              <div id = "div7"class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">humanas e suas tecnologias</div>
+                <div class="card-body">
+                  <h5 class="card-title">Geografia</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=OgD1BYLaMMA&list=PL8vXuI6zmpdhJ59r8q7B7OYpSJpLi7c6c">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://drive.google.com/file/d/1f3Vp1gW723Xyi_6RY14BgoTdpnrrMKeK/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+            </div>
+            
+            <div id = "div9" class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Ciências e suas tecnologias</div>
+                <div class="card-body">
+                    <h5 class="card-title">Biologia</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=bMwEgGaB1ZQ&list=PLdkZd7NEhSekPPX76_B7SI5R3J2aiQoTO">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://drive.google.com/file/d/1fXABgsRobfbYEK37mumECoLCBTfOdA_7/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+            </div>
+            
+            <div id = "div8" class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">ciências e suas tecnologias</div>
+                <div class="card-body">
+                    <h5 class="card-title">Química</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://www.youtube.com/watch?v=-TBlw8lDpS8&list=PL8vXuI6zmpdj_YFEHTaBDccdSCC1LVNH0">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://drive.google.com/file/d/1fCE8w6wNUaGfvowRCC8rvQT2kKWEUjUT/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+            </div>
+            
+            
+            <div id = "div10"class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">ciências e suas tecnologias</div>
+                <div class="card-body">
+                    <h5 class="card-title">Física</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=WxvaeW9MgkA&list=PL8vXuI6zmpdiG6QR-LpXXbUYzPz5rOhF2">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://drive.google.com/file/d/1fClfraqNl4vNNnDUsUYwZ18eABBbjZ7J/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+            </div>
+            
+              <div id = "div11"class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">matemática e suas tecnologias</div>
+                <div class="card-body">
+                  <h5 class="card-title">Matemática</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://www.youtube.com/watch?v=uaYFrtduFmI&list=PLrzB-zHlu3aD-mUeGQyB0YChHiSBfNTvB">Canais Recomendados, Videos Aulas e Exercícios</a></p></button>
+                  <p class="card-text"><button type="button" class="btn btn-outline-info botao"><a href="https://drive.google.com/file/d/1f1bAYBt8FbZnk94TGf6QDtzRRAgyBIvv/view?usp=drive_link">exercícios</a></p></button>
+                </div>
+            </div>
+
+            
+            <div id = "div12"class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">linguagens e suas tecnologias</div>
+                <div class="card-body">
+                    <h5 class="card-title">Línguas Estrangeiras</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?si=8jCbmp56lfN0GaKb&v=dYv-PCORVOY&feature=youtu.be">Vídeo-aulas recomendadas: inglês</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=rw71xM3yAMg&list=PL8vXuI6zmpdgygmHqu3IYXcMBQTJhmLJc">Aulas recomendadas: espanhol</a></p></button>
+                </div>
+              </div>
+
+              <div id = "div2" class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Linguagens e suas tecnologias</div>
+                <div class="card-body">
+                  <h5 class="card-title">Outros</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=35gwUc4nosI&list=PLQJxb-4FM-zHg7W1EwS0_F2oPSZk8GUvd">Video-aulas recomendadas de: artes</a></p></button>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.youtube.com/watch?v=MZ9vaoQfrZ0&list=PL8vXuI6zmpdgRR60A9YGAgwkwnf9QTbsw">Vídeo-aulas de: educação física</a></p></button>
+                </div>
+              </div>
+
+              <div id = "div13" class="card text-bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Geral</div>
+                <div class="card-body">
+                  <h5 class="card-title">Provas anteriores </h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href=" https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos">Cadernos de questões oficiais</a></p></button>
+                  <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos">Gabaritos</a></p></button>
+                </div>
+              </div>
+
+        </div>  
+        </section>     
+            </section>
+ </main>
+ 
+ <footer style="background-color: #e3f2fd;">
+	<p class="rodape"> SRES Área Especial - Cruzeiro Velho, Brasília - DF, 70297-400</p>
+	<nav>
+
+	</nav>
+</footer>
+</body>
+</html>

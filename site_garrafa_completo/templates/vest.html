@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> pevution site de estudos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+ <header>
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <img class="imagem" src="../static/logob.svg">
+    <a class="ingresso"    href="{{url_for('index')}}">Início</a>
+    <a class="ingresso" href="{{url_for('vest')}}"> Vest-UNB</a>
+    <a class="ingresso" href="{{url_for('enem')}}">ENEM</a>
+    <a class="ingresso" href="{{url_for('pas')}}"> PAS</a>
+    <a class="ingresso"    href="{{url_for('sobre')}}">Sobre</a>
+    <button class="btn btn-outline-success" type="submit">forúm</button>
+  </nav>
+ </header>
+ 
+ <main>
+
+      <section>
+    <div class="centralizar_textos">  
+      <hr class="divisao2"/> 
+        <h4 class="titulo_texto" >O que é o vestibular?</h4>
+        <p>O Vestibular da Universidade de Brasília (UnB) é um processo seletivo regido por edital próprio e realizado pelo Centro de Pesquisa em Avaliação e Seleção e de Promoção de Eventos (Cebraspe), com a utilização do método Cespe de avaliação. Seu objetivo é prover 50% das vagas oferecidas para o primeiro semestre letivo dos cursos de graduação da Universidade. O processo compreende Prova de Conhecimentos e Prova de Redação em Língua Portuguesa, aplicadas em dois dias. No primeiro dia (sábado) é a prova de humanas, linguagens (incluindo a redação) e no segundo dia (domingo) é a prova de exatas.</p>
+        <p>Você só pode concorrer a uma vaga caso já tenha concluído, no momento de efetuar o registro acadêmico on-line, o ensino médio ou estudos equivalentes (Lei nº 9.394/1996). Se estiver em processo de aceleração escolar, você também pode se inscrever, desde que a data prevista de conclusão desse processo não ultrapasse a data desse registro. Sem o ensino médio concluído, sua única alternativa é a inscrição como treineiro.</p>
+
+        <h4 class="titulo_texto" >Prova e como funciona:</h4>
+        <p>Os testes acontecerão no fim de semana. No primeiro dia, sábado, haverá uma prova de conhecimentos I (30 questões em cada língua estrangeira), uma prova de conhecimentos II (120 questões) e uma prova de escrita em português. No dia seguinte, domingo, haverá a prova de conhecimentos três (150 questões).
+
+      <h5 style=font-family:Raleaway>1° dia de teste (sábado)</h5>
+      <ol class="c">
+        <li><p>Conhecimento I: Espanhol, francês ou inglês; 30 itens em cada língua estrangeira.</p></li>
+        <li><p>Conhecimentos II: Gramática e literatura portuguesa, geografia e história, artes (artes cênicas, artes visuais e música), filosofia e sociologia; 120 itens.</p></li>
+      </ol>
+
+      <h5 style=font-family:Raleaway>2° dia de teste (domingo)</h5>
+      <ol class="c">
+        <li><p>Conhecimento III: Física, química, matemática, biologia; 150 itens.</p></li>
+      </ol>
+
+        <h4 class="titulo_texto" >Tipos de itens</h4>
+        <ol class="c">
+        <p>As Provas de Conhecimentos podem conter itens dos tipos A, B, C e D. Suas respctivas característcas são:</p>
+        <li><p><strong>Tipo A: </strong>O item deve ser julgado de acordo com o comando a que se refere e tem como resposta CERTO (C) ou ERRADO (E). No cálculo do resultado da prova, ao item do tipo A cuja resposta coincida com o gabarito oficial definitivo é atribuído o valor positivo +x; ao item cuja resposta divirja do gabarito oficial definitivo é atribuído o valor negativo –x; ao item deixado em branco ou com dupla marcação no caderno de respostas é atribuído valor igual a zero.</p></li>
+        <li><p><strong>Tipo B: </strong>Item em que se propõe um problema cuja resposta é um número inteiro de 000 a 999. Todos os algarismos – o das centenas, o das dezenas e o das unidades – devem ser obrigatoriamente marcados no caderno de respostas, mesmo que sejam iguais a zero. No cálculo do resultado da prova, ao item do tipo B cuja resposta coincida com o gabarito oficial definitivo é atribuído o valor positivo +2x; ao item em branco ou cuja resposta do candidato divirja do gabarito oficial definitivo é atribuído o valor igual a zero.</p></li>
+        <li><p><strong>Tipo C: </strong>O item contém quatro opções de resposta, designadas pelas letras A, B, C e D, das quais apenas uma constitui o gabarito. Deve ser marcada apenas uma opção no caderno de respostas. No cálculo do resultado da prova, ao item do tipo C cuja resposta coincida com o gabarito oficial definitivo é atribuído o valor positivo +2x; ao item cuja resposta divirja do gabarito oficial definitivo é atribuído o valor negativo –0,667x; ao item em branco ou com mais de uma marcação no caderno de respostas, é atribuído valor igual a zero.</p></li>
+        <li><p><strong>Tipo D: </strong>É um item de resposta construída, ou seja, item aberto elaborada pelo candidato/ treineiro. No cálculo do resultado da prova, ao item do tipo D cuja resposta atenda totalmente ao solicitado é atribuído o valor positivo +3x; ao item cuja resposta atenda parcialmente ao solicitado é atribuído valor positivo inferior a +3x; ao item em branco ou cuja resposta não atenda ao solicitado é atribuído valor zero.</p></li>
+        <li><p><strong>Redação: </strong>A Prova de redação avalia as habilidades de apresentação em redação em prosa e a aplicação de padrões de linguagem escrita padrão. De acordo com as determinações da Banca Examinadora, o texto produzido deverá ter a extensão máxima de trinta linhas, ser legível, coerente e coeso. O critério de avaliação mais abrangente é a compreensão e desenvolvimento do tema. São avaliados também o domínio da expressão escrita, a apresentação adequada do ensaio e o respeito pela estrutura textual exigida (descritiva, narrativa, argumentação ilustrativa ou texto instrutivo). Podem ser solicitados os seguintes tipos de texto: <strong>resumo, carta, anúncio, texto informativo ou argumentativo.</strong></p></li>
+        </ol>
+
+        <h4 class="titulo_texto" >Resultado</h4>
+        <p>Os candidatos não eliminados são ordenados por campus, por sistema de vagas e por curso, de acordo com os valores decrescentes dos argumentos finais. A relação dos candidatos selecionados em primeira chamada será divulgada no site do  <a href="https://www.cebraspe.org.br/">Cebraspe</a>.</p>
+       <hr class="divisao2"/>
+        <h4 class="texto_div">Assista a vídeo-aulas e faça exercícios:</h4>   
+        <section>
+          <div class="divgrandona">
+            <div id = "div1"class="card text-bg-danger mb-3" style="max-width: 18rem;">
+              <div class="card-header titulo_card">Parte II</div>
+              <div class="card-body">
+                  <h5 class="card-title"> História</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.youtube.com/watch?v=MRE-8r7xI5Y&list=PLOgudoSIaMQudQS3p2Fh4BoFsqYRxRQlk&pp=iAQB">Vídeo-aulas de canais recomendados</a></p></button>
+                  <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/1dLCN9ybu4konll1huSC2j1XTAdo42gTf?usp=drive_link">Exercícios</a></p></button>
+              </div>
+              </div>
+              <div id = "div2"class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title"> Gramática</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="#">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/1wWtCY0OgtZ9qVvqhLaIjwjqZH15k-8yU?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+            <div id = "div3"class="card text-bg-danger mb-3" style="max-width: 18rem;">
+              <div class="card-header titulo_card">Parte II</div>
+              <div class="card-body">
+                  <h5 class="card-title"> Geografia</h5>
+                  <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.youtube.com/watch?v=PdUThivDuN8&list=PLOgudoSIaMQsOiib3u6YVZG5zSsU--qO-&pp=iAQB">Vídeo-aulas de canais recomendados</a></p></button>
+                  <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/1_cuS9i3ZwYvYgGmMbZbEgxLSkcKMf7kR?usp=drive_link">Exercícios</a></p></button>
+              </div>
+          </div>
+              <div id = "div4"class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte I</div>
+                <div class="card-body">
+                    <h5 class="card-title"> Línguas Estrangeiras</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.youtube.com/watch?v=3JPC3UnECBY&list=PLOgudoSIaMQsdulQaRdToVWLzax8_LawK&pp=iAQB">Vídeo-aulas recomandadas: inglês</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.youtube.com/watch?v=z6gWQdcnTjw&list=PLOgudoSIaMQsAFJIIsEMxB3gwjVg0JtXW&pp=iAQB">Vídeo-aulas de espanhol</a></p></button>
+                </div>
+            </div>
+              <div id = "div5"class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title"> Filosofia</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="#">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/1U7qE5SDw2TOW9BCB55uOOU0ctOze_N13?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+              <div id = "div6"class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title"> Sociologia </h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="#">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.cebraspe.org.br/">Exercícios</a></p></button>
+                </div>
+            </div>
+              <div id = "div7"class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title">Matemática</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/1uv73b9JVLGgmqu28EjGLexH0AjH0iNSF?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+              <div id = "div8"class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title">Física</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/11-zL-pom3vxgeSRuhDVmIUwbewPFGQTV?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+              <div id = "div9"class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title">Química</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.youtube.com/watch?v=55kPTwAqhjg&list=PLOgudoSIaMQswwe6HslZmRH9ajr98GGs8&pp=iAQB">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/drive/folders/1lgMq3y2y8fIQyFuuVTFW3YQv-GzPR76A?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+              <div id = "div10"class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title">Biologia</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="#">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a src="https://drive.google.com/drive/folders/1b82G2m9U7FI7-aqBcaPGFSiMrWEc0_rU?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+              <div id = "div11"class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title">Literatura</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="#">Vídeo-aulas de canais recomendados</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://drive.google.com/file/d/1T9UHVVW-VMMYKU4LhzuCAFrcNB_TJPYq/view?usp=drive_link">Exercícios</a></p></button>
+                </div>
+            </div>
+               <div id = "div12"class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header titulo_card">Parte II</div>
+                <div class="card-body">
+                    <h5 class="card-title">Obras</h5>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="">Análises musicais, visuais e cênicas</a></p></button>
+                    <p class="card-text"><button type="button" class="btn btn-outline-light botao"><a href="https://www.youtube.com/watch?v=PA186oEEmzs&list=PLOgudoSIaMQuGLl1r4Ez6lVlETBvVwmEj&pp=iAQB">Vídeo-aulas de artes</a></p></button>
+                </div>
+            </div>
+            <div id = "div13" class="card border-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header titulo_card">Geral</div>
+              <div class="card-body">
+                <h5 class="card-title">Provas anteriores </h5>
+                <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://passeandounb.com/vestibular-unb-provas-anteriores/">Cadernos de questões oficiais</a></p></button>
+                <p class="card-text"><button type="button" class="btn btn-outline-primary botao"><a href="https://passeandounb.com/vestibular-unb-provas-anteriores/">Gabaritos</a></p></button>
+              </div>
+            </div>
+           </div>
+      </section>
+
+ </main>
+ 
+
+ <footer style="background-color: #e3f2fd;">
+	<p class="rodape"> SRES Área Especial - Cruzeiro Velho, Brasília - DF, 70297-400</p>
+	<nav>
+
+	</nav>
+</footer>
+</body>
+</html>

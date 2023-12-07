@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="stylesheet" href="static/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>lista de alunos</title>
+</head>
+<body>
+<h4>Seu email foi cadastrado com sucesso!</h4>
+
+<p> pessoas já cadastrados no PEVUTION</p>
+<h5>
+{% for aluno in alunos %}
+{{aluno.email}}
+{% endfor %}
+    </h5>
+</body>
+</html>

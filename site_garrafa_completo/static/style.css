@@ -1,0 +1,210 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
+
+body {
+    background-color: #F2F6FF;
+  
+}
+
+main {
+    padding: 40px;
+}
+.texto_principal {
+    text-align: center
+}
+
+.centralizar_textos {
+
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    align-items: center;
+    padding: 50px 50px 50px 50px
+}
+
+.centralizar_texto {
+    display: flex;
+   flex-direction: row; 
+    flex: 1;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0px 50px 0px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.divisao {
+    width: 300px;
+}
+
+.divisao2 {
+    width: 800px;
+    padding: 0px 0px 45px 0px;
+}
+
+.navbar {
+    padding: 5px 50px 5px 50px;
+}
+
+.imagem {
+    height : 100px;
+}
+
+.imagem_escola{
+    height : 100px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+}
+
+#div1 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div2 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div3 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div4 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div5 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div6 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div7 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div8{
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div9 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div10 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+#div11 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div12 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+#div13 {
+    display: inline-block;
+    margin: 5PX 5PX 0PX 0PX;
+}
+
+.titulo_card {
+    
+    text-align: center;
+}
+
+.divgrandona {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+ 
+    
+}
+p {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h6 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+}
+
+.pagina2{
+    display: inline-block;
+}
+.botao_escola {
+    text-align: center;
+    margin: 20px 200px 20px 20px;
+}
+
+.roll_pas {
+    text-align: center;
+    display: inline-block;
+    margin: 10PX 20PX 10PX 20PX;
+}
+
+.titulo_texto {
+    font-family: "Raleaway", sans-serif;
+    background-color: #eff3f5;
+    border-radius: 5px;
+    letter-spacing: 3px;
+   padding: 3px 80px 3px 80px;
+}
+
+.texto_div {
+    font-family: "Raleaway", sans-serif;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    letter-spacing: 3px;
+   padding: 3px 80px 3px 80px;
+}
+
+.botao {
+    margin:0px 4px 0px 4px ;
+    padding: 3px 4px 3px 4px;
+   
+    display: inline-flex;
+}
+
+.c {
+    list-style-type: circle;
+}
+
+.cor_triste {
+    color:#b1afaf;
+}
+
+.formulario {
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 12px;
+    margin: auto;
+    padding: 60px 50px 60px 50px;
+}

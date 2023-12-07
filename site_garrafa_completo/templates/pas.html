@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> pevution site de estudos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+ <header>
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <img class="imagem" src="../static/logob.svg">
+    <a class="ingresso"    href="{{url_for('index')}}">Início</a>
+    <a class="ingresso" href="{{url_for('vest')}}"> Vest-UNB</a>
+    <a class="ingresso" href=" {{url_for('enem')}}"> ENEM</a>
+    <a class="ingresso" href="{{url_for('pas')}}"> PAS</a>
+    <a class="ingresso"    href="{{url_for('sobre')}}">Sobre</a>
+    <button class="btn btn-outline-success" type="submit">forúm</button>
+
+  </nav>
+ </header>
+ 
+ <main>
+
+   <section>
+    <div class="centralizar_textos">
+      <hr class="divisao2"/>  
+      <h4 class="titulo_texto">O que é o Programa de Avaliação Seriada?</h4>
+      <p> O PAS é um processo seletivo da Universidade de Brasília (UnB), realizado ao longo dos três anos do ensino médio regular. Atualmente, a Universidade destina a metade das vagas em todos os seus cursos aos aprovados no Programa, abrindo as portas da Instituição para os estudantes do ensino médio de forma gradual e progressiva. As provas são interdisciplinares, com o objetivo de verificar o desempenho das competências e habilidades desejadas para os futuros universitários. A avaliação valoriza a aprendizagem escolar, mas não se detém aos conhecimentos isolados nas disciplinas. Todas as orientações para os estudos, para o trabalho escolar e para a elaboração das provas estão nas Matrizes de Referência de cada etapa do PAS/UnB. Acesse o portal do Programa para conhecer as matrizes. A Matriz apresenta a articulação entre cinco competências e doze habilidades presentes nas três etapas. Para cada etapa, há um conjunto de objetos de conhecimento pensados de forma interdisciplinar, nos quais são sugeridas obras em diversas modalidades: textos, músicas, filmes, pinturas, entre outras.</p>
+    </br>
+      <h4 class="titulo_texto" >Como funciona o programa?</h4>
+      <p> Geralmente, ele acontece em três etapas: uma a cada série do ensino médio. Ao final da 1ª, da 2ª e da 3ª séries do ensino médio, aplica-se a prova relativa aos conhecimentos adquiridos naquele ano de estudo. A classificação dos candidatos é feita após a prova da terceira etapa, com base na média ponderada (pesos 1, 2 e 3) obtida nos resultados das provas realizadas ao final de cada série.</p>
+    </br>
+      <h4 class="titulo_texto" >Quem pode realizar as provas?</h4>
+      <p>Estudante devidamente matriculado no ensino médio de escola pública ou particular, na modalidade regular de ensino, com duração de três anos ou com estrutura curricular de quatro anos completos. É recomendável que a instituição de educação básica esteja credenciada no PAS.</p>
+      <p>Na 3ª etapa da avaliação, o candidato que se inscrever em qualquer um dos cursos que exigem Certificação de Habilidade Específica somente poderá concorrer a esse curso caso possua a referida certificação, dentro do período de validade.</p>
+    </br>
+      <h4 class="titulo_texto" >Qual é o regulamento da isenção?</h4>
+      <p><strong>ISENÇÃO DA TAXA:</strong> Se você preenche um dos requisitos abaixo, peça a isenção da taxa no momento de solicitar sua inscrição.
+        
+        Estudante inscrito no Cadastro para Programas do Governo Federal (CadÚnico) ou membro de família de baixa renda (Decreto nº 6.135/2007).
+        Estudante de ensino médio, matriculado na rede pública de ensino do Distrito Federal e que atenda ao disposto na Lei Distrital nº 5.696/2016, e comprove, cumulativamente, ter renda familiar per capita igual ou inferior a 1½ salário mínimo e ter frequência igual ou superior a 75% das aulas ministradas até o momento da inscrição (válido somente para o PAS 1 e para o PAS 2). A comprovação é validada de acordo com as informações acerca da frequência dos estudantes encaminhadas ao Cebraspe pelo Governo do Distrito Federal.
+        Estudante que atenda ao que estabelece a Lei n° 12.799/2013, comprove, cumulativamente, ter renda familiar per capita igual ou inferior a 1½ salário mínimo e esteja cursando o ensino médio em escola pública – ou como bolsista integral em escola da rede privada (válido somente para o PAS 3).</p>
+        <p>Após concluir o preenchimento do formulário de solicitação de inscrição on-line, imprima e efetue o pagamento do boleto bancário. Se for agendar o pagamento, certifique-se de que a data de agendamento está dentro do prazo estabelecido no edital e, posteriormente, de que o pagamento realmente foi efetuado.</p>
+      </br>
+      <h4 class="titulo_texto" >Áreas do conhecimento</h4>    
+      <ol class="c">
+        <p>As provas são feitas em 1 dias e são separadas em:</p>
+        <li>Parte 1: Língua Estrangeira (espanhol, francês ou inglês, de acordo com a opção do estudante).</li>
+        <li>Parte 2: Obras Músicais, Cênicas e Visuais; Biologia, Filosofia, Física, Geografia, História, Língua Portuguesa, Literaturas de Língua Portuguesa, Matemática, Química e Sociologia.</li>
+      </ol>
+    </br>
+      <p> <h4 class="titulo_texto" >Tipos de itens</h4>
+        <p>As Provas de Conhecimentos podem conter itens dos tipos A, B, C e D. Suas respctivas característcas são:</p>
+        <ol class="c">
+          <li><p><strong>Tipo A: </strong>O item deve ser julgado de acordo com o comando a que se refere e tem como resposta CERTO (C) ou ERRADO (E). No cálculo do resultado da prova, ao item do tipo A cuja resposta coincida com o gabarito oficial definitivo é atribuído o valor positivo +x; ao item cuja resposta divirja do gabarito oficial definitivo é atribuído o valor negativo –x; ao item deixado em branco ou com dupla marcação no caderno de respostas é atribuído valor igual a zero.</p></li>
+          <li><p><strong>Tipo B: </strong>Item em que se propõe um problema cuja resposta é um número inteiro de 000 a 999. Todos os algarismos – o das centenas, o das dezenas e o das unidades – devem ser obrigatoriamente marcados no caderno de respostas, mesmo que sejam iguais a zero. No cálculo do resultado da prova, ao item do tipo B cuja resposta coincida com o gabarito oficial definitivo é atribuído o valor positivo +2x; ao item em branco ou cuja resposta do candidato divirja do gabarito oficial definitivo é atribuído o valor igual a zero.</p></li>
+          <li> <p><strong>Tipo C: </strong>O item contém quatro opções de resposta, designadas pelas letras A, B, C e D, das quais apenas uma constitui o gabarito. Deve ser marcada apenas uma opção no caderno de respostas. No cálculo do resultado da prova, ao item do tipo C cuja resposta coincida com o gabarito oficial definitivo é atribuído o valor positivo +2x; ao item cuja resposta divirja do gabarito oficial definitivo é atribuído o valor negativo –0,667x; ao item em branco ou com mais de uma marcação no caderno de respostas, é atribuído valor igual a zero.</p></li>
+          <li> <p><strong>Tipo D: </strong>É um item de resposta construída, ou seja, item aberto elaborada pelo candidato/ treineiro. No cálculo do resultado da prova, ao item do tipo D cuja resposta atenda totalmente ao solicitado é atribuído o valor positivo +3x; ao item cuja resposta atenda parcialmente ao solicitado é atribuído valor positivo inferior a +3x; ao item em branco ou cuja resposta não atenda ao solicitado é atribuído valor zero.</p></li>
+          <li><p><strong>Redação:</strong>A prova de Redação em Língua Portuguesa vale 10 pontos e é elaborada de acordo com a Matriz de Referência da etapa correspondente. Ela avalia o estudante quanto à expressão na modalidade escrita em prosa e à aplicação das normas da língua escrita padrão. Com base em um comando formulado pela banca examinadora, o estudante deve escrever um texto com extensão máxima de 30 linhas, que seja legível, coerente e coeso. Os critérios de avaliação são divididos em aspectos micro e macroestruturais. Os aspectos microestruturais são relativos à forma como a redação é escrita. A avaliação desses aspectos ocorre por meio da apenação de erros de grafia, morfossintaxe e propriedade vocabular. Os aspectos macroestruturais incluem o desenvolvimento do tema e a apresentação textual. Avaliam-se a organização das ideias e a estruturação do texto, bem como a legibilidade, o respeito às margens e a indicação de parágrafos. O estudante deve, necessariamente, atender à solicitação de tipo textual (dissertativo, descritivo, narrativo, argumentativo, instrucional, entre outros) e/ou de gênero textual (resumo, carta, propaganda etc.) que, porventura, apareça no comando.</p></li>
+        </ol>
+          <hr class="divisao2"/> 
+          <h4 class="texto_div">Assista vídeo-aulas da sua etapa:</h4>   
+          <br/>
+          <section>
+                <iframe class="roll_pas" src=" {{url_for('PAS1')}}" height="600" width="400" title="Iframe Example"></iframe>
+                <iframe class="roll_pas" src=" {{url_for('PAS2')}}" height="600" width="400" title="Iframe Example"></iframe>
+                <iframe class="roll_pas" src=" {{url_for('PAS3')}}" height="600" width="400" title="Iframe Example"></iframe>
+      </section>     
+          </section>
+    </div>
+ </main>
+ 
+ <footer style="background-color: #e3f2fd;">
+	<p class="rodape"> SRES Área Especial - Cruzeiro Velho, Brasília - DF, 70297-400</p>
+	<nav>
+
+	</nav>
+</footer>
+</body>
+</html>

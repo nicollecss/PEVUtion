@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>enem.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bababa;}
+.s3 { color: #a5c261;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+enem.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;pt-BR&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt; </span><span class="s1">pevution site de estudos</span><span class="s0">&lt;/title&gt;</span>
+    
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;</span>
+     
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;static/style.css&quot;</span><span class="s0">&gt;</span>
+
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+ <span class="s0">&lt;header&gt;</span>
+  <span class="s0">&lt;nav </span><span class="s2">class</span><span class="s3">=&quot;navbar&quot; </span><span class="s2">style</span><span class="s3">=&quot;background-color: #e3f2fd;&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;img </span><span class="s2">class</span><span class="s3">=&quot;imagem&quot;  </span><span class="s2">src</span><span class="s3">=&quot;../static/logob.svg&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot;    </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('index')}}&quot;</span><span class="s0">&gt;</span><span class="s1">Início</span><span class="s0">&lt;/a&gt;</span>
+    <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('vest')}}&quot;</span><span class="s0">&gt; </span><span class="s1">Vest-UNB</span><span class="s0">&lt;/a&gt;</span>
+    <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('enem')}}&quot;</span><span class="s0">&gt; </span><span class="s1">ENEM</span><span class="s0">&lt;/a&gt;</span>
+    <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('pas')}}&quot;</span><span class="s0">&gt; </span><span class="s1">PAS</span><span class="s0">&lt;/a&gt;</span>
+    <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('sobre')}}&quot;</span><span class="s0">&gt;</span><span class="s1">Sobre</span><span class="s0">&lt;/a&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-success&quot; </span><span class="s2">type</span><span class="s3">=&quot;submit&quot;</span><span class="s0">&gt;</span><span class="s1">ajuda</span><span class="s0">&lt;/button&gt;</span>
+
+  <span class="s0">&lt;/nav&gt;</span>
+ <span class="s0">&lt;/header&gt;</span>
+ 
+ <span class="s0">&lt;main&gt;</span>
+
+      <span class="s0">&lt;section&gt;</span>
+
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;centralizar_textos&quot;</span><span class="s0">&gt;  </span>
+  <span class="s0">&lt;hr </span><span class="s2">class</span><span class="s3">=&quot;divisao2&quot;</span><span class="s0">/&gt;  </span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot; </span><span class="s0">&gt;</span><span class="s1">O que é o Exame Nacional do Ensino Médio?</span><span class="s0">&lt;/h4&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">Criado em 1998, o Exame Nacional do Ensino Médio (Enem) é uma prova realizada pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP), vinculado ao Ministério da Educação do Brasil (MEC). Seu objetivo inicial era avaliar a qualidade da educação no país, além de também servir como certificação de conclusão do ensino médio até 2016.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">Hoje, o Enem é o maior vestibular do país e seu resultado é utilizado como porta de entrada para diversas instituições de ensino superior, sejam públicas ou privadas. Com edições anuais, os candidatos podem realizar o exame na versão impressa ou digital.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/br&gt;</span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot;</span><span class="s0">&gt;</span><span class="s1">Como funciona a prova?</span><span class="s0">&lt;/h4&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">O Enem funciona da seguinte forma: o candidato se inscreve pelo site durante o período de inscrições e realiza a prova (impressa ou digital) em dois domingos consecutivos na data proposta para aquela edição. Todo esse cronograma é divulgado no site oficial do Enem e atualizado anualmente.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/br&gt;</span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot;</span><span class="s0">&gt;</span><span class="s1">Quem pode fazer?</span><span class="s0">&lt;/h4&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">O Enem é destinado a estudantes que estão concluindo o Ensino Médio, mas pode ser feito por qualquer pessoa com condições de responder a prova.</span>
+            <span class="s1">Quem não concluiu o Ensino Médio e não vai concluí-lo no ano seguinte também pode fazer o Enem, mas como treineiro.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/br&gt;</span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot;</span><span class="s0">&gt;</span><span class="s1">Qual é o regulamento da isenção?</span><span class="s0">&lt;/h4&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">A isenção do Enem é concedida a participantes que estiverem cursando a última série do Ensino Médio, em qualquer modalidade de ensino, em escolas da rede pública declaradas ao Censo Escolar.</span>
+            <span class="s1">Também pode solicitar a gratuidade do exame quem cursou todo o Ensino Médio em escola da rede pública ou como bolsista integral na rede privada, além de ter renda per capita igual ou inferior a um salário mínimo e meio.</span>
+            <span class="s1">Importante: quem obteve isenção da taxa de inscrição para o Enem do ano anterior, porém não compareceu aos dias de prova, deve justificar a ausência para solicitar novamente o benefício.</span><span class="s0">&lt;/p&gt;</span>
+
+        <span class="s0">&lt;/br&gt;</span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot;</span><span class="s0">&gt;</span><span class="s1">Áreas de Conhecimento</span><span class="s0">&lt;/h4&gt;    </span>
+        <span class="s0">&lt;ol </span><span class="s2">class</span><span class="s3">=&quot;c&quot;</span><span class="s0">&gt;</span>
+          <span class="s0">&lt;li&gt;</span><span class="s1">Linguagens, Códigos e suas Tecnologias + Redação Dissertativa-Argumentativa</span><span class="s0">&lt;/li&gt;</span>
+          <span class="s0">&lt;li&gt;</span><span class="s1">Ciências Humanas e Suas Tecnologias</span><span class="s0">&lt;/li&gt;</span>
+          <span class="s0">&lt;li&gt;</span><span class="s1">Ciências da natureza e suas tecnologias</span><span class="s0">&lt;/li&gt;</span>
+          <span class="s0">&lt;li&gt;</span><span class="s1">Matemática e suas  tecnologias</span><span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;/ol&gt;</span>
+        <span class="s0">&lt;/br&gt;</span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot;</span><span class="s0">&gt;</span><span class="s1">Como sai o resultado do exame?</span><span class="s0">&lt;/h4&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">O resultado do Enem é liberado sempre na Página do Participante, na data divulgada pelo Inep. Para realizar a consulta às notas, os participantes precisam informar o CPF e senha cadastrados. As notas para os treineiros (estudantes que ainda não se formarão) serão divulgadas cerca de 60 dias depois das demais notas. A nota do Enem é calculada com base na Teoria de Resposta ao Item (TRI), que pune chutes e valoriza os acertos de cada candidato.</span><span class="s0">&lt;/p&gt;</span>
+
+       <span class="s0">&lt;/br&gt;</span>
+        <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;titulo_texto&quot;</span><span class="s0">&gt;</span><span class="s1">Como e aonde aplicar a nota?</span><span class="s0">&lt;/h4&gt;     </span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">Algumas universidades permitem o ingresso por meio da nota do Enem, mas existem também programas do Governo que usam esse resultado. São eles: </span><span class="s0">&lt;/p&gt;</span>
+            
+            <span class="s0">&lt;ol </span><span class="s2">class</span><span class="s3">=&quot;c&quot;</span><span class="s0">&gt;</span>
+              <span class="s0">&lt;li&gt;&lt;p&gt;&lt;b&gt;</span><span class="s1">SiSU</span><span class="s0">&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;</span>
+            <span class="s0">&lt;/ol&gt;</span>
+          <span class="s0">&lt;p&gt; </span><span class="s1">O Sistema de Seleção Unificada (SiSU) seleciona estudantes para ingressar em universidades públicas, estaduais ou federais. Para se candidatar ao programa, é preciso ter atingido nota acima de zero na redação aplicada no Enem.</span><span class="s0">&lt;/p&gt;</span>
+            
+          <span class="s0">&lt;ol </span><span class="s2">class</span><span class="s3">=&quot;c&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;li&gt;&lt;p&gt;&lt;b&gt;</span><span class="s1">PROUNI</span><span class="s0">&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;</span>
+          <span class="s0">&lt;/ol&gt;</span>
+          <span class="s0">&lt;p&gt; </span><span class="s1">O Programa Universidade para Todos (ProUni) oferece bolsas de 50% ou 100% para estudantes. Para se candidatar, é preciso ter renda familiar entre 1,5 e 3 salários mínimos, ter participado de alguma edição do Enem desde 2010 e ter atingido, pelo menos, 450 pontos na prova, além de não ter zerado a redação.</span><span class="s0">&lt;/p&gt;</span>
+            
+          <span class="s0">&lt;ol </span><span class="s2">class</span><span class="s3">=&quot;c&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;li&gt;&lt;p&gt;&lt;b&gt;</span><span class="s1">FIES</span><span class="s0">&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;</span>
+          <span class="s0">&lt;/ol&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">O Fundo de Financiamento ao Estudante do Ensino Superior (Fies) viabiliza financiamentos para que estudantes entrem em universidades particulares. Para se candidatar, é preciso ter atingido pelo menos 450 pontos na prova do Enem.</span><span class="s0">&lt;/p&gt;  </span>
+
+    <span class="s0">&lt;hr </span><span class="s2">class</span><span class="s3">=&quot;divisao2&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;h4 </span><span class="s2">class</span><span class="s3">=&quot;texto_div&quot;</span><span class="s0">&gt;</span><span class="s1">Assista a vídeo-aulas e faça exercícios:</span><span class="s0">&lt;/h4&gt;   </span>
+    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;section&gt;</span>
+      <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;divgrandona&quot;</span><span class="s0">&gt;        </span>
+            <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div1&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-primary mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">linguagens e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt; </span><span class="s1">Gramática</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=J1FWk53P-yY&amp;list=PL8vXuI6zmpdiy2Xhd1Tn4_q974HxDUzox&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1f5aPSKdLjfJci16sf6nALua0ZiJUrRW4/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              <span class="s0">&lt;/div&gt;</span>
+              
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div6&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">linguagens e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                  <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Literatura</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=POalSeti9cA&amp;list=PLRh73qxL4i9lDSqJq1x59QW6HhPEYfaCq&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1fALVTP84mitXskY3mArrFBYCV41T5it5/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                  <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div3&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-primary mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">humanas e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Filosofia</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot; https://youtu.be/TIIzrsbx74E?si=OZwHDzL_47msG4I9&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1f1LqwrEEM-9vVF-6zCP6s8ZYTF5_ylB2/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              <span class="s0">&lt;/div&gt;</span>
+              
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div4&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">humanas e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Sociologia</span><span class="s0">&lt;/h5&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=ZdIrgqd7keI&amp;list=PLMra4G0-Z7pMnBecUK6b8VpwDceBI7xcE&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1f1LqwrEEM-9vVF-6zCP6s8ZYTF5_ylB2/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              <span class="s0">&lt;/div&gt;</span>
+              
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div5&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-primary mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">humanas e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">História</span><span class="s0">&lt;/h5&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=EDZVqcvffgQ&amp;list=PLMra4G0-Z7pMYLE-D-ptnHt1IW_Y1hn8H&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1fTOeYSWRz2QoHb61X5mACyPsIyVI0v9j/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+              
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div7&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">humanas e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Geografia</span><span class="s0">&lt;/h5&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=OgD1BYLaMMA&amp;list=PL8vXuI6zmpdhJ59r8q7B7OYpSJpLi7c6c&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1f3Vp1gW723Xyi_6RY14BgoTdpnrrMKeK/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            
+            <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div9&quot; </span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">Ciências e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Biologia</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=bMwEgGaB1ZQ&amp;list=PLdkZd7NEhSekPPX76_B7SI5R3J2aiQoTO&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1fXABgsRobfbYEK37mumECoLCBTfOdA_7/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            
+            <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div8&quot; </span><span class="s2">class</span><span class="s3">=&quot;card text-bg-primary mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">ciências e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Química</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=-TBlw8lDpS8&amp;list=PL8vXuI6zmpdj_YFEHTaBDccdSCC1LVNH0&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1fCE8w6wNUaGfvowRCC8rvQT2kKWEUjUT/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            
+            
+            <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div10&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">ciências e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Física</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=WxvaeW9MgkA&amp;list=PL8vXuI6zmpdiG6QR-LpXXbUYzPz5rOhF2&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1fClfraqNl4vNNnDUsUYwZ18eABBbjZ7J/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div11&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-primary mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">matemática e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Matemática</span><span class="s0">&lt;/h5&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=uaYFrtduFmI&amp;list=PLrzB-zHlu3aD-mUeGQyB0YChHiSBfNTvB&quot;</span><span class="s0">&gt;</span><span class="s1">Canais Recomendados, Videos Aulas e Exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://drive.google.com/file/d/1f1bAYBt8FbZnk94TGf6QDtzRRAgyBIvv/view?usp=drive_link&quot;</span><span class="s0">&gt;</span><span class="s1">exercícios</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+
+            
+            <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div12&quot;</span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">linguagens e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Línguas Estrangeiras</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?si=8jCbmp56lfN0GaKb&amp;v=dYv-PCORVOY&amp;feature=youtu.be&quot;</span><span class="s0">&gt;</span><span class="s1">Vídeo-aulas recomendadas: inglês</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                    <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=rw71xM3yAMg&amp;list=PL8vXuI6zmpdgygmHqu3IYXcMBQTJhmLJc&quot;</span><span class="s0">&gt;</span><span class="s1">Aulas recomendadas: espanhol</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              <span class="s0">&lt;/div&gt;</span>
+
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div2&quot; </span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">Linguagens e suas tecnologias</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Outros</span><span class="s0">&lt;/h5&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=35gwUc4nosI&amp;list=PLQJxb-4FM-zHg7W1EwS0_F2oPSZk8GUvd&quot;</span><span class="s0">&gt;</span><span class="s1">Video-aulas recomendadas de: artes</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.youtube.com/watch?v=MZ9vaoQfrZ0&amp;list=PL8vXuI6zmpdgRR60A9YGAgwkwnf9QTbsw&quot;</span><span class="s0">&gt;</span><span class="s1">Vídeo-aulas de: educação física</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              <span class="s0">&lt;/div&gt;</span>
+
+              <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">= &quot;div13&quot; </span><span class="s2">class</span><span class="s3">=&quot;card text-bg-info mb-3&quot; </span><span class="s2">style</span><span class="s3">=&quot;max-width: 18rem;&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-header titulo_card&quot;</span><span class="s0">&gt;</span><span class="s1">Geral</span><span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s0">&gt;</span>
+                  <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s0">&gt;</span><span class="s1">Provas anteriores </span><span class="s0">&lt;/h5&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot; https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos&quot;</span><span class="s0">&gt;</span><span class="s1">Cadernos de questões oficiais</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                  <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s0">&gt;&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary botao&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos&quot;</span><span class="s0">&gt;</span><span class="s1">Gabaritos</span><span class="s0">&lt;/a&gt;&lt;/p&gt;&lt;/button&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+              <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;/div&gt;  </span>
+        <span class="s0">&lt;/section&gt;     </span>
+            <span class="s0">&lt;/section&gt;</span>
+ <span class="s0">&lt;/main&gt;</span>
+ 
+ <span class="s0">&lt;footer </span><span class="s2">style</span><span class="s3">=&quot;background-color: #e3f2fd;&quot;</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;rodape&quot;</span><span class="s0">&gt; </span><span class="s1">SRES Área Especial - Cruzeiro Velho, Brasília - DF, 70297-400</span><span class="s0">&lt;/p&gt;</span>
+	<span class="s0">&lt;nav&gt;</span>
+
+	<span class="s0">&lt;/nav&gt;</span>
+<span class="s0">&lt;/footer&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>

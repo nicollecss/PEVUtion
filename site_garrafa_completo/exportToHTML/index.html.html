@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #e8bf6a;}
+.s2 { color: #bababa;}
+.s3 { color: #a5c261;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+index.html</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s1">&gt;</span>
+<span class="s1">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;pt-BR&quot;</span><span class="s1">&gt;</span>
+<span class="s1">&lt;head&gt;</span>
+    <span class="s1">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s1">&gt;</span>
+    <span class="s1">&lt;title&gt; </span><span class="s0">pevution site de estudos</span><span class="s1">&lt;/title&gt;</span>
+    
+    <span class="s1">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s1">&gt;</span>
+     
+    <span class="s1">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;static/style.css&quot;</span><span class="s1">&gt;</span>
+
+<span class="s1">&lt;/head&gt;</span>
+<span class="s1">&lt;body&gt;</span>
+ <span class="s1">&lt;header&gt;</span>
+    <span class="s1">&lt;nav </span><span class="s2">class</span><span class="s3">=&quot;navbar&quot; </span><span class="s2">style</span><span class="s3">=&quot;background-color: #e3f2fd;&quot;</span><span class="s1">&gt;</span>
+      <span class="s1">&lt;img </span><span class="s2">class</span><span class="s3">=&quot;imagem&quot; </span><span class="s2">src</span><span class="s3">=&quot;../static/logob.svg&quot;</span><span class="s1">&gt;</span>
+      <span class="s1">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('vest')}}&quot;</span><span class="s1">&gt; </span><span class="s0">Vest-UNB</span><span class="s1">&lt;/a&gt;</span>
+      <span class="s1">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('enem')}}&quot;</span><span class="s1">&gt;</span><span class="s0">ENEM</span><span class="s1">&lt;/a&gt;</span>
+      <span class="s1">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('pas')}}&quot;</span><span class="s1">&gt; </span><span class="s0">PAS</span><span class="s1">&lt;/a&gt;</span>
+      <span class="s1">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;ingresso&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('sobre')}}&quot;</span><span class="s1">&gt;</span><span class="s0">Sobre</span><span class="s1">&lt;/a&gt;</span>
+      <span class="s1">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-success&quot; </span><span class="s2">type</span><span class="s3">=&quot;submit&quot;</span><span class="s1">&gt;</span><span class="s0">forúm</span><span class="s1">&lt;/button&gt;</span>
+
+
+    <span class="s1">&lt;/nav&gt;</span>
+
+ <span class="s1">&lt;/header&gt;</span>
+ 
+ <span class="s1">&lt;main&gt;</span>
+
+   <span class="s1">&lt;section&gt;</span>
+    <span class="s4">&lt;!-- --&gt;</span>
+       <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;centralizar_textos&quot;</span><span class="s1">&gt;</span>
+           <span class="s1">&lt;h3 </span><span class="s2">class</span><span class="s3">=&quot;texto_principal&quot;</span><span class="s1">&gt;</span><span class="s0">Seja bem-vindo ao site que te auxiliará na SUA jornada de sucesso!!</span><span class="s1">&lt;/h3&gt;</span>
+           <span class="s1">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;texto_explicativo&quot;</span><span class="s1">&gt; </span><span class="s0">Aqui você encontrará materiais didáticos, que ajudará em seus estudos.</span><span class="s1">&lt;/h5&gt;</span>
+           
+           <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;centralizar_texto&quot;</span><span class="s1">&gt; </span>
+            <span class="s1">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-primary&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('signin')}}&quot; </span><span class="s2">role</span><span class="s3">=&quot;button&quot;</span><span class="s1">&gt;</span><span class="s0">CADASTRE-SE</span><span class="s1">&lt;/a&gt;</span>
+            <span class="s1">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;btn btn-outline-info&quot; </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('entrar_conta')}}&quot; </span><span class="s2">role</span><span class="s3">=&quot;button&quot;</span><span class="s1">&gt;</span><span class="s0">JÁ SOU ALUNO</span><span class="s1">&lt;/a&gt;</span>
+           <span class="s1">&lt;/div&gt; </span>
+           <span class="s1">&lt;hr </span><span class="s2">class</span><span class="s3">=&quot;divisao&quot;</span><span class="s1">/&gt;</span>
+       <span class="s1">&lt;/div&gt;</span>
+   <span class="s1">&lt;/section&gt;</span>
+
+   <span class="s1">&lt;section&gt;</span>
+     <span class="s4">&lt;!-- cards--&gt;</span>
+
+     
+
+      
+    <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;centralizar_texto&quot;</span><span class="s1">&gt;</span>
+       <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card text-center&quot;</span><span class="s1">&gt;</span>
+   
+        <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s1">&gt;</span>
+          <span class="s1">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s1">&gt;</span><span class="s0">O que é o PAS?</span><span class="s1">&lt;/h5&gt;</span>
+          <span class="s1">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s1">&gt;</span><span class="s0">Processo seletivo criado pela UnB em 1995 como alternativa ao vestibular para ingresso na Universidade. O PAS objetiva integrar a educação básica à superior para promover melhorias na qualidade do ensino.</span><span class="s1">&lt;/p&gt;</span>
+          <span class="s1">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('pas')}}&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-primary&quot;</span><span class="s1">&gt;</span><span class="s0">saiba mais  </span><span class="s1">&lt;/a&gt;</span>
+        <span class="s1">&lt;/div&gt;</span>
+
+      <span class="s1">&lt;/div&gt;</span>
+
+
+      <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card text-center&quot;</span><span class="s1">&gt;</span>
+      
+        <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s1">&gt;</span>
+          <span class="s1">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s1">&gt;</span><span class="s0">O que é o ENEM?</span><span class="s1">&lt;/h5&gt;</span>
+          <span class="s1">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s1">&gt;</span><span class="s0">O Exame Nacional do Ensino Médio tem o objetivo de avaliar o desempenho do estudante ao fim da escolaridade básica. Podem participar do exame alunos que estão concluindo ou que já concluíram o ensino médio em anos anteriores.</span><span class="s1">&lt;/p&gt;</span>
+          <span class="s1">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('enem')}}&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-primary&quot; </span><span class="s1">&gt;</span><span class="s0">saiba mais</span><span class="s1">&lt;/a&gt;</span>
+        <span class="s1">&lt;/div&gt;</span>
+  
+      <span class="s1">&lt;/div&gt;</span>
+
+
+
+      <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card text-center&quot;</span><span class="s1">&gt;</span>
+    
+        <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card-body&quot;</span><span class="s1">&gt;</span>
+          <span class="s1">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;card-title&quot;</span><span class="s1">&gt;</span><span class="s0">O que é o Vestibular Tradicional?</span><span class="s1">&lt;/h5&gt;</span>
+          <span class="s1">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;card-text&quot;</span><span class="s1">&gt;</span><span class="s0">O Vestibular da Universidade de Brasília (UnB) é um processo seletivo regido por edital pronto e realizado pelo Centro de Pesquisa em Avaliação de Eventos (Cebraspe), com a utilização do método Cespe de avaliação. </span><span class="s1">&lt;/p&gt;</span>
+          <span class="s1">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;{{url_for('vest')}}&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-primary&quot;</span><span class="s1">&gt;</span><span class="s0">saiba mais</span><span class="s1">&lt;/a&gt;</span>
+        <span class="s1">&lt;/div&gt;</span>
+      <span class="s1">&lt;/div&gt;</span>
+    <span class="s1">&lt;/div&gt;</span>
+        
+
+   <span class="s1">&lt;/section&gt;</span>
+ <span class="s1">&lt;/main&gt;</span>
+ 
+
+<span class="s1">&lt;footer </span><span class="s2">style</span><span class="s3">=&quot;background-color: #e3f2fd;&quot;</span><span class="s1">&gt;</span>
+	<span class="s1">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;rodape&quot;</span><span class="s1">&gt; </span><span class="s0">SRES Área Especial - Cruzeiro Velho, Brasília - DF, 70297-400</span><span class="s1">&lt;/p&gt;</span>
+	<span class="s1">&lt;nav&gt;</span>
+
+	<span class="s1">&lt;/nav&gt;</span>
+<span class="s1">&lt;/footer&gt;</span>
+<span class="s1">&lt;/body&gt;</span>
+<span class="s1">&lt;/html&gt;</span></pre>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> pevution site de estudos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+ <header>
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <img class="imagem" src="../static/logob.svg">
+    <a class="ingresso"    href="{{url_for('index')}}">Início</a>
+    <a class="ingresso" href="{{url_for('vest')}}"> Vest-UNB</a>
+    <a class="ingresso" href=" {{url_for('enem')}}"> ENEM</a>
+    <a class="ingresso" href=" {{url_for('pas')}}"> PAS</a>
+    <a class="ingresso"    href=" {{url_for('sobre')}}">Sobre</a>
+    <button class="btn btn-outline-success" type="submit">forúm</button>
+
+  </nav>
+ </header>
+ 
+ <main>
+<div class="centralizar_textos">
+   <section>
+
+    <h3 class="titulo_texto">Quem somos?</h3>
+    <p>Somos um grupo 6 alunos do CEMI Cruzeiro (Brasília-DF). Demos início a esse site justamente a partir de um projeto escolar. Somos estudantes de Tecnologia da Informação, e esse site foi feito inteiramente por nós.</p>
+      <p>O objetivo do site é faciltar a vida dos estudantes no processo de vestibulando, pois sabemos como é essa rotina de estudos, apostilas e aulas. A partir desse entendimento vimos a possibilidade de construir algo que auxiliasse nessa jornada. Ele trás informações utéis, como: inscrições, requesitos mínimos para as provas, conselhos preparativos, estrutura das provas,e os dias de realização de provas, entre outros aspectos.</p>
+
+    <a href="https://cemicruzeiro.se.df.gov.br/"><button type="button" class="btn btn-outline-primary">Conheça nossa escola</button></a>
+
+        
+        </section>
+
+       <section>
+      <img class="imagem" src="../static/logodaescola.png" alt="Logo CEMI-Cruzeiro">
+       </section> 
+       <section>
+       <p>Agradeçemos pelo seu acesso e desejamos muito sucesso na sua trajetória! Lembre-se que voce é capaz.</p>
+      
+      <ol class="c cor_triste">
+        <li><p>Beatriz de Sá</p></li>
+        <li> <p>Luiz Gustavo</p></li>
+        <li> <p>Madu Pires</p></li>
+        <li><p>Maycon Fortes</p></li>
+        <li><p>Nicolle Cavalcante</p></li>
+        <li><p>Rebeca Alves</p></li>
+      </ol>
+       </section>
+ </div>  
+ </main>
+ 
+ <footer style="background-color: #e3f2fd;">
+	<p class="rodape"> SRES Área Especial - Cruzeiro Velho, Brasília - DF, 70297-400</p>
+	<nav>
+
+	</nav>
+</footer>
+</body>
+</html>
